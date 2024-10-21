@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add responsive utilities */
+@layer utilities {
+  .max-w-mobile {
+    max-width: 100%;
+  }
+}
+
+/* Adjust font sizes for mobile */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Ensure proper spacing on mobile */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
